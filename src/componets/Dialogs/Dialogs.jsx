@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import s from "./Dialogs.module.css";
+import Message from './Message/Message';
 
 const DialogItem = (props) => {
   return (
@@ -10,9 +11,9 @@ const DialogItem = (props) => {
   );
 };
 
-const Message = (props) => {
-  return <div className={s.message}>{props.message}</div>;
-};
+// const Message = (props) => {
+//   return <div className={s.message}>{props.message}</div>;
+// };
 
 const Dialogs = (props) => {
   
@@ -26,6 +27,10 @@ const Dialogs = (props) => {
     <div className={s.dialogs}>
       <div className={s.dialogItems}>{dialogsElements}</div>
       <div className={s.messages}>{messagesElements}</div>
+      <div className={s.textareaContent}>
+        <textarea>dsadas</textarea>
+        <button>fdsf</button>
+      </div>
     </div>
   );
 };
