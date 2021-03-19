@@ -7,6 +7,7 @@ import Navbar from "./componets/Navbar/Navbar";
 import News from "./componets/News/News";
 import Profile from "./componets/Profile/Profile";
 
+
 const App = (props) => {
 
  
@@ -17,7 +18,7 @@ const App = (props) => {
         <Navbar />
         <div className="app-wrapper-content">
           <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage} />} />
-          <Route path="/profile" render={() => <Profile state={props.state.profilePage}/>} />
+          <Route path="/profile" render={() => <Profile state={props.state.profilePage} addPost={props.addPost}/>} />
           <Route path="/news" render={() => <News />} />
         </div>
       </div>

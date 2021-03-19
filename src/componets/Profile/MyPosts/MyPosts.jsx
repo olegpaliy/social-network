@@ -7,7 +7,7 @@ const MyPosts = (props) => {
 
   let addPost = () => {
     let text = newPostElement.current.value;
-    alert("rerer");
+    props.addPost(text);
   };
   let onChange = (e) => {
     alert(e.target.value)
